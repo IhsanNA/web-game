@@ -1,0 +1,30 @@
+{% extends 'core/base.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}WELCOME THERE{% endblock %}</title>
+    {% block htmlhead %}
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'index.css' %}">
+    {% endblock htmlhead %}
+</head>
+<body>
+    {% block content %}
+    <div class="container text-center" style="padding-top: 100px;">
+      <div class="row">
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+      <img src="https://unblast.com/wp-content/uploads/2023/07/Minecraft-Text-Effect.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Minecraft</h5>
+        <button type="button" class="btn btn-secondary btn-sm" onclick="location.href='/isigame'">See more</button>
+      </div>
+    </div>
+        </div>
+      </div>
+    {% endblock %}
+</body>
+</html>
